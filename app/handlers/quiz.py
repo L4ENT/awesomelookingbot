@@ -8,10 +8,12 @@ from app.models.quiz import Quiz
 from app.misc import dp, i18n
 from app.utils.superuser import get_admin_chat
 from app.utils.quiz import QuizQuestions, QuizStates, build_question_text, process_answer, start_quiz
+from app.utils.keyboard import default_keyboard
 
 _ = i18n.gettext
 
-
+@dp.message_handler(Text(equals=_('Start quiz again'), ignore_case=True), state='*')
+@dp.message_handler(Text(equals='Начать опрос заново', ignore_case=True), state='*')
 @dp.message_handler(commands=['quiz'])
 async def cmd_quiz(message: types.Message):
     """
@@ -23,6 +25,7 @@ async def cmd_quiz(message: types.Message):
 
 
 @dp.message_handler(Text(equals=_('Finish the quiz'), ignore_case=True), state='*')
+@dp.message_handler(Text(equals='Закончить опрос', ignore_case=True), state='*')
 async def cancel_handler(message: types.Message, state: FSMContext):
     """
     Allow user to cancel any action
@@ -35,7 +38,7 @@ async def cancel_handler(message: types.Message, state: FSMContext):
     # Cancel state and inform user about it
     await state.finish()
     # And remove keyboard (just in case)
-    await message.reply(_('The quiz is finished'), reply_markup=types.ReplyKeyboardRemove())
+    await message.reply(_('The quiz is finished'), reply_markup=default_keyboard())
 
 
 @dp.message_handler(state=QuizStates.skills)

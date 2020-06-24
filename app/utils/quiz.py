@@ -8,6 +8,8 @@ from aiogram.utils.callback_data import CallbackData
 from aiogram.dispatcher.filters.state import State, StatesGroup
 from app.models.quiz import Quiz
 from app.utils.general_info import get_general_information
+from aiogram.utils.markdown import hbold
+from app.utils.keyboard import default_keyboard
 
 _ = i18n.gettext
 
@@ -40,7 +42,7 @@ class QuizQuestions:
     }
 
 
-THANKU = 'Thanks for answers. Now I suggest you familiarize yourself with the general information.'
+THANKU = _('Thanks for answers.')
 
 
 class QuizStates(StatesGroup):
@@ -54,10 +56,10 @@ class QuizStates(StatesGroup):
 
 def build_question_text(key):
     message_parts = QuizQuestions.messages.get(key)
-    question = message_parts.get('question')
+    question = hbold(_(message_parts.get('question')))
     answer_format = '{0}: {1}'.format(
-        _('Answer format'), message_parts.get('format'))
-    example = '{0}: {1}'.format(_('Example'), message_parts.get('example'))
+        hbold(_('Answer format')), _(message_parts.get('format')))
+    example = '{0}: {1}'.format(hbold(_('Example')), _(message_parts.get('example')))
     return '\n\n'.join([question, answer_format, example])
 
 
@@ -105,5 +107,5 @@ async def process_answer(message: types.Message, state: FSMContext):
         await message.answer(build_question_text(next_state_name))
     else:
         await state.finish()
-        await message.answer(THANKU)
+        await message.answer(THANKU, reply_markup=default_keyboard())
         await message.answer(get_general_information())

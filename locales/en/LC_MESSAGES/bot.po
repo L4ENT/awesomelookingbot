@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiogram_bot 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-06-24 21:56+1000\n"
+"POT-Creation-Date: 2020-06-25 00:58+1000\n"
 "PO-Revision-Date: 2019-10-22 00:12+0300\n"
 "Last-Translator: \n"
 "Language: en\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: app/handlers/base.py:20
+#: app/handlers/base.py:21
 msgid ""
 "(From bot owner) Hello, {user}! Glad to see you here.\n"
 "\n"
@@ -31,27 +31,27 @@ msgid ""
 "I pass you into his arms )"
 msgstr ""
 
-#: app/handlers/base.py:37
+#: app/handlers/base.py:39
 msgid "Here you can read the list of my commands:"
 msgstr ""
 
-#: app/handlers/base.py:38
+#: app/handlers/base.py:40
 msgid "{command} - Start conversation with bot"
 msgstr ""
 
-#: app/handlers/base.py:39
+#: app/handlers/base.py:41
 msgid "{command} - Get this message"
 msgstr ""
 
-#: app/handlers/base.py:40
+#: app/handlers/base.py:42
 msgid "{command} - Chat or user settings"
 msgstr ""
 
-#: app/handlers/base.py:41
+#: app/handlers/base.py:43
 msgid "{command} - List of avalible projects for you"
 msgstr ""
 
-#: app/handlers/base.py:42
+#: app/handlers/base.py:44
 msgid "{command} - Pass the quiz"
 msgstr ""
 
@@ -116,19 +116,27 @@ msgstr ""
 msgid "Bad answer."
 msgstr ""
 
-#: app/handlers/projects.py:24
-msgid "{0} {1} needs a project!"
+#: app/handlers/projects.py:15 app/utils/keyboard.py:10
+msgid "Get a projects list"
 msgstr ""
 
 #: app/handlers/projects.py:26
+msgid "{0} {1} needs a project!"
+msgstr ""
+
+#: app/handlers/projects.py:29
 msgid "Message is received. Please wait for an asnswer."
 msgstr ""
 
-#: app/handlers/quiz.py:25 app/utils/quiz.py:73
+#: app/handlers/quiz.py:15 app/utils/keyboard.py:11
+msgid "Start quiz again"
+msgstr ""
+
+#: app/handlers/quiz.py:27 app/utils/quiz.py:74
 msgid "Finish the quiz"
 msgstr ""
 
-#: app/handlers/quiz.py:38
+#: app/handlers/quiz.py:41
 msgid "The quiz is finished"
 msgstr ""
 
@@ -190,78 +198,114 @@ msgstr ""
 msgid "{status} Do not disturb"
 msgstr ""
 
-#: app/utils/general_info.py:7
+#: app/utils/general_info.py:9
 msgid "What we do?"
 msgstr ""
 
-#: app/utils/general_info.py:15
+#: app/utils/general_info.py:10
+msgid ""
+"Web - HTML, CSS, JS, PYTHON, PHP\n"
+"Design - Web Design, Mobile Design, Identity\n"
+"Marketing - SEO, Context (Google Ads, Yandex Metrica, My Target, SMM "
+"(Instagram, Vk, Facebook)\n"
+"If you do not see here what you are good at - we are open to any offers -"
+" we will burst into any area if the game is worth the paraffin spent.\n"
+"If you have your own projects, but do not have enough resources to "
+"implement them, then contact us. We will definitely respond - with what "
+"we can we will help."
+msgstr ""
+
+#: app/utils/general_info.py:17
 msgid "What do we give?"
 msgstr ""
 
-#: app/utils/general_info.py:21
+#: app/utils/general_info.py:23
 msgid "Payment"
 msgstr ""
 
-#: app/utils/general_info.py:27
+#: app/utils/general_info.py:24
+msgid ""
+"Remuneration is discussed with each person personally before each "
+"project. All financial nuances are clearly agreed upon prior to any work."
+"\n"
+"We are not concluding an agreement yet. Not because we are a radical "
+"marginal community, but because, so far, there is no such possibility due"
+" to the complexity of implementation in terms of jurisprudence and "
+"taxation.\n"
+"BUT our policy - a contract is always good. We will gradually come to "
+"official contracts - this is a fact."
+msgstr ""
+
+#: app/utils/general_info.py:29
 msgid "Minimum Entry Threshold"
 msgstr ""
 
-#: app/utils/general_info.py:31
+#: app/utils/general_info.py:30
+msgid ""
+"Know Git at the level of clone, brunch, commit and push. The rest is "
+"personal nuances."
+msgstr ""
+
+#: app/utils/general_info.py:33
 msgid "Who is this job for?"
 msgstr ""
 
-#: app/utils/quiz.py:26
+#: app/utils/quiz.py:27
 msgid "What about your professional skills and experience?"
 msgstr ""
 
-#: app/utils/quiz.py:27
+#: app/utils/quiz.py:28
 msgid ""
 "You can send a long text with your full story, but surely in single "
 "message."
 msgstr ""
 
-#: app/utils/quiz.py:28
+#: app/utils/quiz.py:29
 msgid ""
 "I am a website designer. I worked in a digital agency for 2 years. I have"
 " very much projects in my suitcase) There is a portfolio [link]. I am "
 "often fond a design of fonts ..."
 msgstr ""
 
-#: app/utils/quiz.py:31
+#: app/utils/quiz.py:32
 msgid ""
 "What projects and tasks are you interested in (programming, sales, "
 "marketing, turnkey projects, short tasks, etc.)?"
 msgstr ""
 
-#: app/utils/quiz.py:32
+#: app/utils/quiz.py:33
 msgid ""
 "Preferably detailed (thesis), because it will be easier to find the right"
 " project for you. Be sure to write in a single message."
 msgstr ""
 
-#: app/utils/quiz.py:33
+#: app/utils/quiz.py:34
 msgid "Turnkey website design, mobile application design, identity, logos"
 msgstr ""
 
-#: app/utils/quiz.py:36
+#: app/utils/quiz.py:37
 msgid ""
 "How much time per week are you willing to devote to our joint projects? "
 "You can rely on the fact that the average working week is 40 hours."
 msgstr ""
 
-#: app/utils/quiz.py:37
+#: app/utils/quiz.py:38
 msgid "Preferably briefly and necessarily in single message."
 msgstr ""
 
-#: app/utils/quiz.py:38
+#: app/utils/quiz.py:39
 msgid "20 hours a week. Sometimes I work on weekends and holidays"
 msgstr ""
 
-#: app/utils/quiz.py:59
+#: app/utils/quiz.py:44
+msgid "Thanks for answers."
+msgstr ""
+
+#: app/utils/quiz.py:60
 msgid "Answer format"
 msgstr "Формат ответа"
 
-#: app/utils/quiz.py:60
+#: app/utils/quiz.py:61
 msgid "Example"
 msgstr "Пример"
 
@@ -345,5 +389,14 @@ msgstr "Пример"
 #~ msgid ""
 #~ "My Engine:\n"
 #~ "{aiogram}"
+#~ msgstr ""
+
+#~ msgid "Закончить опрос"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Thanks for answers. Now I suggest "
+#~ "you familiarize yourself with the "
+#~ "general information."
 #~ msgstr ""
 

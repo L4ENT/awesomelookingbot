@@ -6,6 +6,7 @@ from loguru import logger
 
 from app.misc import dp, i18n
 from app.models.user import User
+from app.utils.keyboard import default_keyboard
 from app.utils.quiz import start_quiz
 
 _ = i18n.gettext
@@ -21,7 +22,8 @@ async def cmd_start(message: types.Message, user: User):
             "(From bot owner) Hello, {user}! Glad to see you here."
             "\n\nThis bot helps me greatly save time and effort on organizational processes. For everything to continue to work like a Swiss watch, I highly recommend using all the features of this bot. Believe me, we will both benefit from it. "
             "\n\nI pass you into his arms )"
-        ).format(user=hbold(message.from_user.username))
+        ).format(user=hbold(message.from_user.username)),
+        reply_markup=default_keyboard()
     )
 
     await user.update(start_conversation=True).apply()
@@ -63,7 +65,7 @@ async def cmd_help(message: types.Message):
     #             _("In private chats this commands list can be other"),
     #         ]
     #     )
-    await message.reply("\n".join(text))
+    await message.reply("\n".join(text), reply_markup=default_keyboard())
 
 
 # @dp.message_handler(commands=["version"])
