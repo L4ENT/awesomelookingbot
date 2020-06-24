@@ -15,6 +15,7 @@ class User(TimedBaseModel):
     do_not_disturb = db.Column(
         db.Boolean, default=False, server_default=expression.false(), nullable=False
     )
+    chat_id = db.Column(db.Integer)
 
 
 class UserRelatedModel(BaseModel):

@@ -7,6 +7,7 @@ from app.utils.superuser import create_super_user, get_admin_chat
 from aiogram.utils.callback_data import CallbackData
 from aiogram.dispatcher.filters.state import State, StatesGroup
 from app.models.quiz import Quiz
+from app.utils.general_info import get_general_information
 
 _ = i18n.gettext
 
@@ -37,8 +38,10 @@ class QuizQuestions:
             'example': _('20 hours a week. Sometimes I work on weekends and holidays'),
         }
     }
-    
+
+
 THANKU = 'Thanks for answers. Now I suggest you familiarize yourself with the general information.'
+
 
 class QuizStates(StatesGroup):
     """
@@ -58,7 +61,7 @@ def build_question_text(key):
     return '\n\n'.join([question, answer_format, example])
 
 
-async def start_quiz(message):
+async def start_quiz(message: types.Message):
     """
     Starting a quiz.
     """
@@ -66,8 +69,12 @@ async def start_quiz(message):
 
     # Starting a quiz
     await QuizStates.skills.set()
-
-    await message.answer(build_question_text(QuizQuestions.SKILLS))
+    kb = types.ReplyKeyboardMarkup()
+    kb.add(types.KeyboardButton(_('Finish the quiz')))
+    await message.answer(
+        build_question_text(QuizQuestions.SKILLS), 
+        reply_markup=kb
+    )
 
 
 async def process_answer(message: types.Message, state: FSMContext):
@@ -91,7 +98,7 @@ async def process_answer(message: types.Message, state: FSMContext):
 
     # Call the next step in quiz
     next_state = await QuizStates.next()
-    
+
     if next_state:
         _, next_state_name = next_state.split(':')
         # Send a new message
@@ -99,4 +106,4 @@ async def process_answer(message: types.Message, state: FSMContext):
     else:
         await state.finish()
         await message.answer(THANKU)
-    
+        await message.answer(get_general_information())

@@ -24,3 +24,6 @@ async def create_super_user(user_id: int, remove: bool) -> bool:
 
 async def get_admin_chat():
     return await Chat.query.gino.first()
+
+async def get_admin_user():
+    return await User.query.where(User.is_superuser == True).gino.first()

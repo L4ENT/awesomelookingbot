@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiogram_bot 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-06-24 17:06+1000\n"
+"POT-Creation-Date: 2020-06-24 21:56+1000\n"
 "PO-Revision-Date: 2019-11-06 11:41+0200\n"
 "Last-Translator: \n"
 "Language: uk\n"
@@ -20,70 +20,41 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: app/handlers/base.py:17
+#: app/handlers/base.py:20
 msgid ""
-"Hello, {user}.\n"
-"Send /help if you want to read my commands list and also you can change "
-"language by sending /settings command.\n"
-"My source code: {source_url}"
-msgstr ""
-"Привіт, {user}.\n"
-"Надішли /help якщо хочеш побачити список моїх команд, або /settings якщо "
-"хочеш змінити мову.\n"
+"(From bot owner) Hello, {user}! Glad to see you here.\n"
 "\n"
-"Мій код: {source_url}"
+"This bot helps me greatly save time and effort on organizational "
+"processes. For everything to continue to work like a Swiss watch, I "
+"highly recommend using all the features of this bot. Believe me, we will "
+"both benefit from it. \n"
+"\n"
+"I pass you into his arms )"
+msgstr ""
 
-#: app/handlers/base.py:35
+#: app/handlers/base.py:37
 msgid "Here you can read the list of my commands:"
 msgstr "Тут описаний список моїх команд:"
 
-#: app/handlers/base.py:36
+#: app/handlers/base.py:38
 msgid "{command} - Start conversation with bot"
 msgstr "{command} - Почати діалог з ботом"
 
-#: app/handlers/base.py:37
+#: app/handlers/base.py:39
 msgid "{command} - Get this message"
 msgstr "{command} - Отримати дане повідомлення"
 
-#: app/handlers/base.py:38
+#: app/handlers/base.py:40
 msgid "{command} - Chat or user settings"
 msgstr "{command} - Налаштування чату або профілю"
 
-#: app/handlers/base.py:39
-msgid "{command} - My version"
-msgstr "{command} - Моя версія"
-
-#: app/handlers/base.py:48
-msgid "In chats this commands list can be other"
-msgstr "В чатах список команд може відрізнятись"
-
-#: app/handlers/base.py:54
-msgid "Available only in groups:"
-msgstr "Доступно тільки в чатах:"
-
-#: app/handlers/base.py:55
-msgid "{command} - Report message to chat administrators"
-msgstr "{command} - Поскаржитись на повідомлення"
-
-#: app/handlers/base.py:58
-msgid "{command} - Set RO mode for user"
-msgstr "{command} - Заборонити користувачу писати в чат"
-
-#: app/handlers/base.py:59
-msgid "{command} - Ban user"
-msgstr "{command} - Заблокувати користувача в чаті"
-
-#: app/handlers/base.py:61
-msgid "In private chats this commands list can be other"
-msgstr "В приватних повідомленях цей список може відрізнятись"
-
-#: app/handlers/base.py:70
-msgid ""
-"My Engine:\n"
-"{aiogram}"
+#: app/handlers/base.py:41
+msgid "{command} - List of avalible projects for you"
 msgstr ""
-"Моя версія:\n"
-"{aiogram}"
+
+#: app/handlers/base.py:42
+msgid "{command} - Pass the quiz"
+msgstr ""
 
 #: app/handlers/chat_settings.py:51 app/handlers/chat_settings.py:93
 #: app/handlers/chat_settings.py:131
@@ -150,13 +121,21 @@ msgstr "Гарна відповідь!"
 msgid "Bad answer."
 msgstr "Погана відповідь."
 
-#: app/handlers/quiz.py:25 app/handlers/superuser.py:25
-msgid "Successful changed is_superuser to {is_superuser} for user {user}"
-msgstr "Успішно встановлено is_superuser на {is_superuser} для користувача {user}"
+#: app/handlers/projects.py:24
+msgid "{0} {1} needs a project!"
+msgstr ""
 
-#: app/handlers/quiz.py:30 app/handlers/superuser.py:30
-msgid "Failed to set is_superuser to {is_superuser} for user {user}"
-msgstr "Не вдалось встановити is_superuser на {is_superuser} користувачу {user}"
+#: app/handlers/projects.py:26
+msgid "Message is received. Please wait for an asnswer."
+msgstr ""
+
+#: app/handlers/quiz.py:25 app/utils/quiz.py:73
+msgid "Finish the quiz"
+msgstr ""
+
+#: app/handlers/quiz.py:38
+msgid "The quiz is finished"
+msgstr ""
 
 #: app/handlers/simple_admin.py:47
 msgid "<b>Read-only</b> activated for user {user}. Duration: {duration}"
@@ -186,6 +165,14 @@ msgstr "Я повідомим адміністрацію чату про це п
 msgid "User {user} leave this chat..."
 msgstr "Користувач {user} покинув цей чат..."
 
+#: app/handlers/superuser.py:25
+msgid "Successful changed is_superuser to {is_superuser} for user {user}"
+msgstr "Успішно встановлено is_superuser на {is_superuser} для користувача {user}"
+
+#: app/handlers/superuser.py:30
+msgid "Failed to set is_superuser to {is_superuser} for user {user}"
+msgstr "Не вдалось встановити is_superuser на {is_superuser} користувачу {user}"
+
 #: app/utils/chat_settings.py:24
 msgid "Settings for chat {chat_title}"
 msgstr "Налаштування чату {chat_title}"
@@ -210,58 +197,160 @@ msgstr "Персональні налаштування"
 msgid "{status} Do not disturb"
 msgstr "{status} Не турбувати"
 
-#: app/utils/quiz.py:23
+#: app/utils/general_info.py:7
+msgid "What we do?"
+msgstr ""
+
+#: app/utils/general_info.py:15
+msgid "What do we give?"
+msgstr ""
+
+#: app/utils/general_info.py:21
+msgid "Payment"
+msgstr ""
+
+#: app/utils/general_info.py:27
+msgid "Minimum Entry Threshold"
+msgstr ""
+
+#: app/utils/general_info.py:31
+msgid "Who is this job for?"
+msgstr ""
+
+#: app/utils/quiz.py:26
 msgid "What about your professional skills and experience?"
 msgstr ""
 
-#: app/utils/quiz.py:24
+#: app/utils/quiz.py:27
 msgid ""
 "You can send a long text with your full story, but surely in single "
 "message."
 msgstr ""
 
-#: app/utils/quiz.py:25
+#: app/utils/quiz.py:28
 msgid ""
 "I am a website designer. I worked in a digital agency for 2 years. I have"
 " very much projects in my suitcase) There is a portfolio [link]. I am "
 "often fond a design of fonts ..."
 msgstr ""
 
-#: app/utils/quiz.py:28
+#: app/utils/quiz.py:31
 msgid ""
 "What projects and tasks are you interested in (programming, sales, "
 "marketing, turnkey projects, short tasks, etc.)?"
 msgstr ""
 
-#: app/utils/quiz.py:29
+#: app/utils/quiz.py:32
 msgid ""
 "Preferably detailed (thesis), because it will be easier to find the right"
 " project for you. Be sure to write in a single message."
 msgstr ""
 
-#: app/utils/quiz.py:30
+#: app/utils/quiz.py:33
 msgid "Turnkey website design, mobile application design, identity, logos"
 msgstr ""
 
-#: app/utils/quiz.py:33
+#: app/utils/quiz.py:36
 msgid ""
 "How much time per week are you willing to devote to our joint projects? "
 "You can rely on the fact that the average working week is 40 hours."
 msgstr ""
 
-#: app/utils/quiz.py:34
+#: app/utils/quiz.py:37
 msgid "Preferably briefly and necessarily in single message."
 msgstr ""
 
-#: app/utils/quiz.py:35
+#: app/utils/quiz.py:38
 msgid "20 hours a week. Sometimes I work on weekends and holidays"
 msgstr ""
 
-#: app/utils/quiz.py:53
+#: app/utils/quiz.py:59
 msgid "Answer format"
 msgstr ""
 
-#: app/utils/quiz.py:54
+#: app/utils/quiz.py:60
 msgid "Example"
 msgstr ""
+
+#~ msgid ""
+#~ "Hello, {user}.\n"
+#~ "Send /help if you want to read "
+#~ "my commands list and also you can"
+#~ " change language by sending /settings "
+#~ "command.\n"
+#~ "My source code: {source_url}"
+#~ msgstr ""
+#~ "Привіт, {user}.\n"
+#~ "Надішли /help якщо хочеш побачити список"
+#~ " моїх команд, або /settings якщо "
+#~ "хочеш змінити мову.\n"
+#~ "\n"
+#~ "Мій код: {source_url}"
+
+#~ msgid ""
+#~ "(From bot owner) Hello, {user}! Glad "
+#~ "to see you here.This bot helps me"
+#~ " greatly save time and effort on "
+#~ "organizational processes. For everything to"
+#~ " continue to work like a Swiss "
+#~ "watch, I highly recommend using all "
+#~ "the features of this bot. Believe "
+#~ "me, we will both benefit from it."
+#~ " I pass you into his arms )"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "(From bot owner) Hello, {user}! Glad to see you here.\n"
+#~ "\n"
+#~ "This bot helps me greatly save "
+#~ "time and effort on organizational "
+#~ "processes. For everything to continue to"
+#~ " work like a Swiss watch, I "
+#~ "highly recommend using all the features"
+#~ " of this bot. Believe me, we "
+#~ "will both benefit from it. I pass"
+#~ " you into his arms )"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "(From bot owner) Hello, {user}! Glad to see you here.\n"
+#~ "\n"
+#~ "This bot helps me greatly save "
+#~ "time and effort on organizational "
+#~ "processes. For everything to continue to"
+#~ " work like a Swiss watch, I "
+#~ "highly recommend using all the features"
+#~ " of this bot. Believe me, we "
+#~ "will both benefit from it. \n"
+#~ "\n"
+#~ "I pass you into its arms )"
+#~ msgstr ""
+
+#~ msgid "{command} - My version"
+#~ msgstr "{command} - Моя версія"
+
+#~ msgid "In chats this commands list can be other"
+#~ msgstr "В чатах список команд може відрізнятись"
+
+#~ msgid "Available only in groups:"
+#~ msgstr "Доступно тільки в чатах:"
+
+#~ msgid "{command} - Report message to chat administrators"
+#~ msgstr "{command} - Поскаржитись на повідомлення"
+
+#~ msgid "{command} - Set RO mode for user"
+#~ msgstr "{command} - Заборонити користувачу писати в чат"
+
+#~ msgid "{command} - Ban user"
+#~ msgstr "{command} - Заблокувати користувача в чаті"
+
+#~ msgid "In private chats this commands list can be other"
+#~ msgstr "В приватних повідомленях цей список може відрізнятись"
+
+#~ msgid ""
+#~ "My Engine:\n"
+#~ "{aiogram}"
+#~ msgstr ""
+#~ "Моя версія:\n"
+#~ "{aiogram}"
 

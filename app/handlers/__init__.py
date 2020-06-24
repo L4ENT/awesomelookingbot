@@ -8,5 +8,6 @@ from . import simple_admin
 from . import base
 from . import chat_settings
 from . import new_chat_members
-from . import superuser
 from . import quiz
+from . import projects
+from . import superuser

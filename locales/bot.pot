@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiogram_bot 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-06-24 17:06+1000\n"
+"POT-Creation-Date: 2020-06-24 21:56+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,62 +17,39 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: app/handlers/base.py:17
+#: app/handlers/base.py:20
 msgid ""
-"Hello, {user}.\n"
-"Send /help if you want to read my commands list and also you can change language by sending "
-"/settings command.\n"
-"My source code: {source_url}"
-msgstr ""
-
-#: app/handlers/base.py:35
-msgid "Here you can read the list of my commands:"
-msgstr ""
-
-#: app/handlers/base.py:36
-msgid "{command} - Start conversation with bot"
+"(From bot owner) Hello, {user}! Glad to see you here.\n"
+"\n"
+"This bot helps me greatly save time and effort on organizational processes. For everything to "
+"continue to work like a Swiss watch, I highly recommend using all the features of this bot. "
+"Believe me, we will both benefit from it. \n"
+"\n"
+"I pass you into his arms )"
 msgstr ""
 
 #: app/handlers/base.py:37
-msgid "{command} - Get this message"
+msgid "Here you can read the list of my commands:"
 msgstr ""
 
 #: app/handlers/base.py:38
-msgid "{command} - Chat or user settings"
+msgid "{command} - Start conversation with bot"
 msgstr ""
 
 #: app/handlers/base.py:39
-msgid "{command} - My version"
+msgid "{command} - Get this message"
 msgstr ""
 
-#: app/handlers/base.py:48
-msgid "In chats this commands list can be other"
+#: app/handlers/base.py:40
+msgid "{command} - Chat or user settings"
 msgstr ""
 
-#: app/handlers/base.py:54
-msgid "Available only in groups:"
+#: app/handlers/base.py:41
+msgid "{command} - List of avalible projects for you"
 msgstr ""
 
-#: app/handlers/base.py:55
-msgid "{command} - Report message to chat administrators"
-msgstr ""
-
-#: app/handlers/base.py:58
-msgid "{command} - Set RO mode for user"
-msgstr ""
-
-#: app/handlers/base.py:59
-msgid "{command} - Ban user"
-msgstr ""
-
-#: app/handlers/base.py:61
-msgid "In private chats this commands list can be other"
-msgstr ""
-
-#: app/handlers/base.py:70
-msgid ""
-"My Engine:\n"
-"{aiogram}"
+#: app/handlers/base.py:42
+msgid "{command} - Pass the quiz"
 msgstr ""
 
 #: app/handlers/chat_settings.py:51 app/handlers/chat_settings.py:93 app/handlers/chat_settings.py:131
@@ -134,12 +111,20 @@ msgstr ""
 msgid "Bad answer."
 msgstr ""
 
-#: app/handlers/quiz.py:25 app/handlers/superuser.py:25
-msgid "Successful changed is_superuser to {is_superuser} for user {user}"
+#: app/handlers/projects.py:24
+msgid "{0} {1} needs a project!"
 msgstr ""
 
-#: app/handlers/quiz.py:30 app/handlers/superuser.py:30
-msgid "Failed to set is_superuser to {is_superuser} for user {user}"
+#: app/handlers/projects.py:26
+msgid "Message is received. Please wait for an asnswer."
+msgstr ""
+
+#: app/handlers/quiz.py:25 app/utils/quiz.py:73
+msgid "Finish the quiz"
+msgstr ""
+
+#: app/handlers/quiz.py:38
+msgid "The quiz is finished"
 msgstr ""
 
 #: app/handlers/simple_admin.py:47
@@ -168,6 +153,14 @@ msgstr ""
 msgid "User {user} leave this chat..."
 msgstr ""
 
+#: app/handlers/superuser.py:25
+msgid "Successful changed is_superuser to {is_superuser} for user {user}"
+msgstr ""
+
+#: app/handlers/superuser.py:30
+msgid "Failed to set is_superuser to {is_superuser} for user {user}"
+msgstr ""
+
 #: app/utils/chat_settings.py:24
 msgid "Settings for chat {chat_title}"
 msgstr ""
@@ -192,55 +185,75 @@ msgstr ""
 msgid "{status} Do not disturb"
 msgstr ""
 
-#: app/utils/quiz.py:23
+#: app/utils/general_info.py:7
+msgid "What we do?"
+msgstr ""
+
+#: app/utils/general_info.py:15
+msgid "What do we give?"
+msgstr ""
+
+#: app/utils/general_info.py:21
+msgid "Payment"
+msgstr ""
+
+#: app/utils/general_info.py:27
+msgid "Minimum Entry Threshold"
+msgstr ""
+
+#: app/utils/general_info.py:31
+msgid "Who is this job for?"
+msgstr ""
+
+#: app/utils/quiz.py:26
 msgid "What about your professional skills and experience?"
 msgstr ""
 
-#: app/utils/quiz.py:24
+#: app/utils/quiz.py:27
 msgid "You can send a long text with your full story, but surely in single message."
 msgstr ""
 
-#: app/utils/quiz.py:25
+#: app/utils/quiz.py:28
 msgid ""
 "I am a website designer. I worked in a digital agency for 2 years. I have very much projects in "
 "my suitcase) There is a portfolio [link]. I am often fond a design of fonts ..."
 msgstr ""
 
-#: app/utils/quiz.py:28
+#: app/utils/quiz.py:31
 msgid ""
 "What projects and tasks are you interested in (programming, sales, marketing, turnkey projects, "
 "short tasks, etc.)?"
 msgstr ""
 
-#: app/utils/quiz.py:29
+#: app/utils/quiz.py:32
 msgid ""
 "Preferably detailed (thesis), because it will be easier to find the right project for you. Be "
 "sure to write in a single message."
 msgstr ""
 
-#: app/utils/quiz.py:30
+#: app/utils/quiz.py:33
 msgid "Turnkey website design, mobile application design, identity, logos"
 msgstr ""
 
-#: app/utils/quiz.py:33
+#: app/utils/quiz.py:36
 msgid ""
 "How much time per week are you willing to devote to our joint projects? You can rely on the fact"
 " that the average working week is 40 hours."
 msgstr ""
 
-#: app/utils/quiz.py:34
+#: app/utils/quiz.py:37
 msgid "Preferably briefly and necessarily in single message."
 msgstr ""
 
-#: app/utils/quiz.py:35
+#: app/utils/quiz.py:38
 msgid "20 hours a week. Sometimes I work on weekends and holidays"
 msgstr ""
 
-#: app/utils/quiz.py:53
+#: app/utils/quiz.py:59
 msgid "Answer format"
 msgstr ""
 
-#: app/utils/quiz.py:54
+#: app/utils/quiz.py:60
 msgid "Example"
 msgstr ""
 
