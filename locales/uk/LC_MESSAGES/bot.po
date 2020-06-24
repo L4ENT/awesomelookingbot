@@ -1,14 +1,14 @@
 # Ukrainian translations for aiogram_bot.
-# Copyright (C) 2019 Illemius
+# Copyright (C) 2020 Illemius
 # This file is distributed under the same license as the aiogram_bot
 # project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: aiogram_bot 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-11-06 11:44+0200\n"
+"POT-Creation-Date: 2020-06-24 17:06+1000\n"
 "PO-Revision-Date: 2019-11-06 11:41+0200\n"
 "Last-Translator: \n"
 "Language: uk\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.7.0\n"
+"Generated-By: Babel 2.8.0\n"
 
 #: app/handlers/base.py:17
 msgid ""
@@ -150,6 +150,14 @@ msgstr "Гарна відповідь!"
 msgid "Bad answer."
 msgstr "Погана відповідь."
 
+#: app/handlers/quiz.py:25 app/handlers/superuser.py:25
+msgid "Successful changed is_superuser to {is_superuser} for user {user}"
+msgstr "Успішно встановлено is_superuser на {is_superuser} для користувача {user}"
+
+#: app/handlers/quiz.py:30 app/handlers/superuser.py:30
+msgid "Failed to set is_superuser to {is_superuser} for user {user}"
+msgstr "Не вдалось встановити is_superuser на {is_superuser} користувачу {user}"
+
 #: app/handlers/simple_admin.py:47
 msgid "<b>Read-only</b> activated for user {user}. Duration: {duration}"
 msgstr "Користувачу {user} <b>заборонено писати</b> в чаті на {duration}"
@@ -178,14 +186,6 @@ msgstr "Я повідомим адміністрацію чату про це п
 msgid "User {user} leave this chat..."
 msgstr "Користувач {user} покинув цей чат..."
 
-#: app/handlers/superuser.py:25
-msgid "Successful changed is_superuser to {is_superuser} for user {user}"
-msgstr "Успішно встановлено is_superuser на {is_superuser} для користувача {user}"
-
-#: app/handlers/superuser.py:30
-msgid "Failed to set is_superuser to {is_superuser} for user {user}"
-msgstr "Не вдалось встановити is_superuser на {is_superuser} користувачу {user}"
-
 #: app/utils/chat_settings.py:24
 msgid "Settings for chat {chat_title}"
 msgstr "Налаштування чату {chat_title}"
@@ -209,4 +209,59 @@ msgstr "Персональні налаштування"
 #: app/utils/chat_settings.py:67
 msgid "{status} Do not disturb"
 msgstr "{status} Не турбувати"
+
+#: app/utils/quiz.py:23
+msgid "What about your professional skills and experience?"
+msgstr ""
+
+#: app/utils/quiz.py:24
+msgid ""
+"You can send a long text with your full story, but surely in single "
+"message."
+msgstr ""
+
+#: app/utils/quiz.py:25
+msgid ""
+"I am a website designer. I worked in a digital agency for 2 years. I have"
+" very much projects in my suitcase) There is a portfolio [link]. I am "
+"often fond a design of fonts ..."
+msgstr ""
+
+#: app/utils/quiz.py:28
+msgid ""
+"What projects and tasks are you interested in (programming, sales, "
+"marketing, turnkey projects, short tasks, etc.)?"
+msgstr ""
+
+#: app/utils/quiz.py:29
+msgid ""
+"Preferably detailed (thesis), because it will be easier to find the right"
+" project for you. Be sure to write in a single message."
+msgstr ""
+
+#: app/utils/quiz.py:30
+msgid "Turnkey website design, mobile application design, identity, logos"
+msgstr ""
+
+#: app/utils/quiz.py:33
+msgid ""
+"How much time per week are you willing to devote to our joint projects? "
+"You can rely on the fact that the average working week is 40 hours."
+msgstr ""
+
+#: app/utils/quiz.py:34
+msgid "Preferably briefly and necessarily in single message."
+msgstr ""
+
+#: app/utils/quiz.py:35
+msgid "20 hours a week. Sometimes I work on weekends and holidays"
+msgstr ""
+
+#: app/utils/quiz.py:53
+msgid "Answer format"
+msgstr ""
+
+#: app/utils/quiz.py:54
+msgid "Example"
+msgstr ""
 

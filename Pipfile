@@ -17,6 +17,7 @@ isort = "==4.3.21"
 flake8 = "==3.7.8"
 ipython = "==7.8.0"
 aiohttp-autoreload = "==0.0.1"
+pylint = "*"
 
 [packages]
 aiogram = "==2.4"

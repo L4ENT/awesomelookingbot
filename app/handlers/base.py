@@ -6,6 +6,7 @@ from loguru import logger
 
 from app.misc import dp, i18n
 from app.models.user import User
+from app.utils.quiz import start_quiz
 
 _ = i18n.gettext
 
@@ -13,6 +14,7 @@ _ = i18n.gettext
 @dp.message_handler(CommandStart())
 async def cmd_start(message: types.Message, user: User):
     logger.info("User {user} start conversation with bot", user=message.from_user.id)
+    
     await message.answer(
         _(
             "Hello, {user}.\n"
@@ -26,6 +28,8 @@ async def cmd_start(message: types.Message, user: User):
     )
 
     await user.update(start_conversation=True).apply()
+    
+    await start_quiz(message)
 
 
 @dp.message_handler(CommandHelp())
