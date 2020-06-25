@@ -8,6 +8,8 @@ from app.misc import dp, i18n
 from app.models.user import User
 from app.utils.keyboard import default_keyboard
 from app.utils.quiz import start_quiz
+from app.utils.help import get_help
+from app.utils.general_info import get_general_information
 
 _ = i18n.gettext
 
@@ -28,47 +30,14 @@ async def cmd_start(message: types.Message, user: User):
 
     await user.update(start_conversation=True).apply()
 
-    await start_quiz(message)
+    await get_help(message)
+
 
 @dp.message_handler(Text(equals=_('Help'), ignore_case=True))
 @dp.message_handler(Text(equals='Помощь', ignore_case=True))
 @dp.message_handler(CommandHelp())
 async def cmd_help(message: types.Message):
-    logger.info("User {user} read help in {chat}",
-                user=message.from_user.id, chat=message.chat.id)
-    text = [
-        hbold(_("Here you can read the list of my commands:")),
-        _("{command} - Start conversation with bot").format(command="/start"),
-        _("{command} - Get this message").format(command="/help"),
-        _("{command} - Chat or user settings").format(command="/settings"),
-        _("{command} - List of avalible projects for you").format(command="/projects"),
-        _("{command} - Start the quiz").format(command="/quiz"),
-        _("{command} - General info").format(command="/info"),
-        hbold(_("You can send any questions with a simple message")),
-    ]
-
-    # if types.ChatType.is_private(message):
-    #     text.extend(
-    #         [
-    #             # hbold(_("Available only in PM with bot:")),
-    #             # "",
-    #             _("In chats this commands list can be other")
-    #         ]
-    #     )
-    # else:
-    #     text.extend(
-    #         [
-    #             hbold(_("Available only in groups:")),
-    #             _("{command} - Report message to chat administrators").format(
-    #                 command="/report, !report, @admin"
-    #             ),
-    #             _("{command} - Set RO mode for user").format(command="!ro"),
-    #             _("{command} - Ban user").format(command="!ban"),
-    #             "",
-    #             _("In private chats this commands list can be other"),
-    #         ]
-    #     )
-    await message.reply("\n".join(text), reply_markup=default_keyboard())
+    await get_help(message)
 
 
 # @dp.message_handler(commands=["version"])

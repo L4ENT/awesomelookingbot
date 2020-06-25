@@ -41,7 +41,7 @@ async def admin_messages(message: types.Message):
         
 
 @dp.message_handler()
-async def admin_messages(message: types.Message):
+async def messages_messages(message: types.Message):
     admin_user = await get_admin_user()
     if message.from_user.id != admin_user.id:
         await message.forward(admin_user.id)
