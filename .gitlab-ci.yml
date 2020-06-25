@@ -48,3 +48,38 @@ release-app-image:
     - docker push $APP_LATEST_IMAGE
   only:
     - master
+
+
+deploy-to-rancher:
+  stage: deploy
+  image: jonaskello/rancher-cli-k8s
+  script:
+    - rancher login $RANCHER_URL --token $RANCHER_BEARER_TOKEN --context $RANCHER_PROJECT_ID
+    - (rancher kubectl
+        --namespace=$RANCHER_NAMESPACE patch deployment $RANCHER_WORKLOAD_NAME
+        --type=strategic
+        -p "{
+          \"spec\":{
+            \"template\":{
+              \"spec\":{
+                \"containers\":[
+                  {
+                    \"name\":\"$RANCHER_WORKLOAD_NAME\",
+                    \"env\":[
+                      {
+                        \"name\":\"FORCE_RESTART_AT\",
+                        \"value\":\"$CI_PIPELINE_ID\"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }"
+      )
+
+  variables:
+    GIT_STRATEGY: none
+  only:
+    - master
