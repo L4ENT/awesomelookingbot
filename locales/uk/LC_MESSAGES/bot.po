@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiogram_bot 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-06-25 10:13+1000\n"
+"POT-Creation-Date: 2020-06-25 10:20+1000\n"
 "PO-Revision-Date: 2019-11-06 11:41+0200\n"
 "Last-Translator: \n"
 "Language: uk\n"
@@ -64,32 +64,36 @@ msgstr ""
 msgid "You can send any questions with a simple message"
 msgstr ""
 
-#: app/handlers/chat_settings.py:51 app/handlers/chat_settings.py:93
-#: app/handlers/chat_settings.py:131
+#: app/handlers/chat_settings.py:29
+msgid "Settings"
+msgstr ""
+
+#: app/handlers/chat_settings.py:60 app/handlers/chat_settings.py:102
+#: app/handlers/chat_settings.py:140
 msgid "Invalid chat"
 msgstr "Невірний чат"
 
-#: app/handlers/chat_settings.py:65
+#: app/handlers/chat_settings.py:74
 msgid "Choose chat language"
 msgstr "Обери мову для чату"
 
-#: app/handlers/chat_settings.py:97 app/handlers/chat_settings.py:135
+#: app/handlers/chat_settings.py:106 app/handlers/chat_settings.py:144
 msgid "You cannot change settings of this chat!"
 msgstr "Ти не можеш міняти налаштування цього чату!"
 
-#: app/handlers/chat_settings.py:109
+#: app/handlers/chat_settings.py:118
 msgid "Language changed to {new_language}"
 msgstr "Мову змінено на {new_language}"
 
-#: app/handlers/chat_settings.py:119
+#: app/handlers/chat_settings.py:128
 msgid "Do not disturb mode reconfigured"
 msgstr "Налаштування режиму \"Не турбувати\" змінено"
 
-#: app/handlers/chat_settings.py:141
+#: app/handlers/chat_settings.py:150
 msgid "Join filter re-configured"
 msgstr "Фільтр входу користувачів переналаштовано"
 
-#: app/handlers/chat_settings.py:154
+#: app/handlers/chat_settings.py:163
 msgid "Settings saved"
 msgstr "Налаштування збережено"
 

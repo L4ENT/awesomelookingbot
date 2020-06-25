@@ -9,4 +9,5 @@ def default_keyboard():
     kb = types.ReplyKeyboardMarkup()
     kb.add(types.KeyboardButton(_('Get a projects list')))
     kb.add(types.KeyboardButton(_('Start quiz again')))
+    kb.add(types.KeyboardButton(_('Setting')))
     return kb
