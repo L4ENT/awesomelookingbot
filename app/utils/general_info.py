@@ -15,7 +15,7 @@ def get_general_information():
             '\nIf you have your own projects, but do not have enough resources to implement them, then contact us. We will definitely respond - with what we can we will help.'
         ),
         hbold(_('What do we give?')),
-        (
+        _(
             'Free schedule (only deadlines and checkpoints limit).'
             '\n\nTop experience. We work all over the world, keep in touch and work on projects with top experts, and share all knowledge and best practices with everyone who wants to join the community.'
             '\n\nFlexible payment system. Before each project, we personally agree on the size, terms of payment and the system of fines for non-compliance with the conditions (for both parties).'
@@ -31,7 +31,7 @@ def get_general_information():
             'Know Git at the level of clone, brunch, commit and push. The rest is personal nuances.'
         ),
         hbold(_('Who is this job for?')),
-        (
+        _(
             'While we cannot provide everyone with permanent projects and a stable monthly salary, we offer to consider all this as an excellent temporary part-time job, an opportunity to pump your skills and replenish your portfolio with cool projects.'
         )
     ]

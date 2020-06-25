@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiogram_bot 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-06-25 00:58+1000\n"
+"POT-Creation-Date: 2020-06-25 10:04+1000\n"
 "PO-Revision-Date: 2019-11-06 11:41+0200\n"
 "Last-Translator: \n"
 "Language: uk\n"
@@ -137,7 +137,7 @@ msgstr ""
 msgid "Start quiz again"
 msgstr ""
 
-#: app/handlers/quiz.py:27 app/utils/quiz.py:74
+#: app/handlers/quiz.py:27 app/utils/quiz.py:75
 msgid "Finish the quiz"
 msgstr ""
 
@@ -226,6 +226,19 @@ msgstr ""
 msgid "What do we give?"
 msgstr ""
 
+#: app/utils/general_info.py:18
+msgid ""
+"Free schedule (only deadlines and checkpoints limit).\n"
+"\n"
+"Top experience. We work all over the world, keep in touch and work on "
+"projects with top experts, and share all knowledge and best practices "
+"with everyone who wants to join the community.\n"
+"\n"
+"Flexible payment system. Before each project, we personally agree on the "
+"size, terms of payment and the system of fines for non-compliance with "
+"the conditions (for both parties)."
+msgstr ""
+
 #: app/utils/general_info.py:23
 msgid "Payment"
 msgstr ""
@@ -257,62 +270,70 @@ msgstr ""
 msgid "Who is this job for?"
 msgstr ""
 
-#: app/utils/quiz.py:27
-msgid "What about your professional skills and experience?"
+#: app/utils/general_info.py:34
+msgid ""
+"While we cannot provide everyone with permanent projects and a stable "
+"monthly salary, we offer to consider all this as an excellent temporary "
+"part-time job, an opportunity to pump your skills and replenish your "
+"portfolio with cool projects."
 msgstr ""
 
 #: app/utils/quiz.py:28
+msgid "What about your professional skills and experience?"
+msgstr ""
+
+#: app/utils/quiz.py:29
 msgid ""
 "You can send a long text with your full story, but surely in single "
 "message."
 msgstr ""
 
-#: app/utils/quiz.py:29
+#: app/utils/quiz.py:30
 msgid ""
 "I am a website designer. I worked in a digital agency for 2 years. I have"
 " very much projects in my suitcase) There is a portfolio [link]. I am "
 "often fond a design of fonts ..."
 msgstr ""
 
-#: app/utils/quiz.py:32
+#: app/utils/quiz.py:33
 msgid ""
 "What projects and tasks are you interested in (programming, sales, "
 "marketing, turnkey projects, short tasks, etc.)?"
 msgstr ""
 
-#: app/utils/quiz.py:33
+#: app/utils/quiz.py:34
 msgid ""
 "Preferably detailed (thesis), because it will be easier to find the right"
 " project for you. Be sure to write in a single message."
 msgstr ""
 
-#: app/utils/quiz.py:34
+#: app/utils/quiz.py:35
 msgid "Turnkey website design, mobile application design, identity, logos"
 msgstr ""
 
-#: app/utils/quiz.py:37
+#: app/utils/quiz.py:38
 msgid ""
 "How much time per week are you willing to devote to our joint projects? "
 "You can rely on the fact that the average working week is 40 hours."
 msgstr ""
 
-#: app/utils/quiz.py:38
+#: app/utils/quiz.py:39
 msgid "Preferably briefly and necessarily in single message."
 msgstr ""
 
-#: app/utils/quiz.py:39
+#: app/utils/quiz.py:40
 msgid "20 hours a week. Sometimes I work on weekends and holidays"
 msgstr ""
 
-#: app/utils/quiz.py:44
+#: app/utils/quiz.py:45
 msgid "Thanks for answers."
 msgstr ""
 
-#: app/utils/quiz.py:60
+#: app/utils/quiz.py:61
 msgid "Answer format"
 msgstr ""
 
-#: app/utils/quiz.py:61
+#: app/utils/quiz.py:62
 msgid "Example"
 msgstr ""
 

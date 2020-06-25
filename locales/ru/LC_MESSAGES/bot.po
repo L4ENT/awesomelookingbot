@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiogram_bot 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-06-25 00:58+1000\n"
+"POT-Creation-Date: 2020-06-25 10:04+1000\n"
 "PO-Revision-Date: 2019-11-06 11:40+0200\n"
 "Last-Translator: \n"
 "Language: ru\n"
@@ -145,7 +145,7 @@ msgstr "Сообщение получено. Пожалуйста ождайте
 msgid "Start quiz again"
 msgstr "Начать опрос заново"
 
-#: app/handlers/quiz.py:27 app/utils/quiz.py:74
+#: app/handlers/quiz.py:27 app/utils/quiz.py:75
 msgid "Finish the quiz"
 msgstr "Закончить опрос"
 
@@ -233,10 +233,42 @@ msgid ""
 "implement them, then contact us. We will definitely respond - with what "
 "we can we will help."
 msgstr ""
+"Веб - HTML, CSS, JS, PYTHON, PHP\n"
+"Дезигн - Веб-дезигн, Мобайл-Дезигн, Айдентики\n"
+"Маркетинг - SEO, Контекстная Реклама (Google Ads, Yandex Metrica, My "
+"Target, SMM (Instagram, Vk, Facebook)\n"
+"Если вы не видите здесь того в чем вы хороши - мы открыты для любых "
+"предложений - ворвемся в любую область если игра стоит потраченного "
+"парафина.\n"
+"Если у вас есть свои проекты, но не хватает ресурсов чтобы их "
+"реализовать, то обращайтесь к нам. Мы абсолютно точно отзовемся - чем "
+"сможем тем поможем."
 
 #: app/utils/general_info.py:17
 msgid "What do we give?"
 msgstr "Что мы можем предложить?"
+
+#: app/utils/general_info.py:18
+msgid ""
+"Free schedule (only deadlines and checkpoints limit).\n"
+"\n"
+"Top experience. We work all over the world, keep in touch and work on "
+"projects with top experts, and share all knowledge and best practices "
+"with everyone who wants to join the community.\n"
+"\n"
+"Flexible payment system. Before each project, we personally agree on the "
+"size, terms of payment and the system of fines for non-compliance with "
+"the conditions (for both parties)."
+msgstr ""
+"Абсолютно свободный график (ограничивают только дедлайны и чекпоинты)\n"
+"\n"
+"Топовый опыт. Мы работаем по всему миру, держим связь и работаем на "
+"проектах с топовыми специалистами, а всеми знаниями и наработками делимся"
+" с каждым желающим вступить в сообщество\n"
+"\n"
+"Гибкая система оплаты. Перед каждым проектом мы лично согласуем размер, "
+"сроки выплат и систему штрафов за невыполнение условий (для обоих "
+"сторон)."
 
 #: app/utils/general_info.py:23
 msgid "Payment"
@@ -254,6 +286,13 @@ msgid ""
 "BUT our policy - a contract is always good. We will gradually come to "
 "official contracts - this is a fact."
 msgstr ""
+"Денежное вознаграждение обсуждается с каждым лично перед каждым проектом."
+" Все финансовые нюансы четко оговариваются до начала любых работ.\n"
+"Договора пока что мы не заключаем. Не потому что мы радикальное "
+"маргинальное сообщество, а потому что, пока что, нет такой возможности из"
+" за сложности реализации в части юриспруденции и налогообложения.НО наша "
+"политика - договор это всегда хорошо. К официальным контрактам мы "
+"постепенно придем - это факт."
 
 #: app/utils/general_info.py:29
 msgid "Minimum Entry Threshold"
@@ -264,16 +303,30 @@ msgid ""
 "Know Git at the level of clone, brunch, commit and push. The rest is "
 "personal nuances."
 msgstr ""
+"Знать Git на уровне клонировать, бранчевать, коммитить и пушить, а "
+"остальное это персональные нюансы."
 
 #: app/utils/general_info.py:33
 msgid "Who is this job for?"
 msgstr "Для кого эта работа?"
 
-#: app/utils/quiz.py:27
+#: app/utils/general_info.py:34
+msgid ""
+"While we cannot provide everyone with permanent projects and a stable "
+"monthly salary, we offer to consider all this as an excellent temporary "
+"part-time job, an opportunity to pump your skills and replenish your "
+"portfolio with cool projects."
+msgstr ""
+"Пока мы не можем обеспечить всех постоянными проектами и стабильной "
+"ежемесячной заработной платой, поэтому предлагаю рассматривать все это "
+"как отличный временный заработок, возможность прокачать свои собственные "
+"умения и пополнить портфолио крутыми проектами"
+
+#: app/utils/quiz.py:28
 msgid "What about your professional skills and experience?"
 msgstr "Расскажите про ваши навыки и опыт работы"
 
-#: app/utils/quiz.py:28
+#: app/utils/quiz.py:29
 msgid ""
 "You can send a long text with your full story, but surely in single "
 "message."
@@ -281,7 +334,7 @@ msgstr ""
 "Можно так подробно как вы хотите, но обязязательно прислать это одним "
 "сообщением"
 
-#: app/utils/quiz.py:29
+#: app/utils/quiz.py:30
 msgid ""
 "I am a website designer. I worked in a digital agency for 2 years. I have"
 " very much projects in my suitcase) There is a portfolio [link]. I am "
@@ -291,7 +344,7 @@ msgstr ""
 "за плечами.  Есть портфолио [по ссылке]. Люблю плоский дизайн и "
 "минимализм, а еще частенько упарываюсь по шрифтам ... "
 
-#: app/utils/quiz.py:32
+#: app/utils/quiz.py:33
 msgid ""
 "What projects and tasks are you interested in (programming, sales, "
 "marketing, turnkey projects, short tasks, etc.)?"
@@ -299,7 +352,7 @@ msgstr ""
 "Какие проекты и задачи вам интересны (программирование, продажи, "
 "маркетинг, проекты под ключ, короткие задачи и т.п.)?"
 
-#: app/utils/quiz.py:33
+#: app/utils/quiz.py:34
 msgid ""
 "Preferably detailed (thesis), because it will be easier to find the right"
 " project for you. Be sure to write in a single message."
@@ -307,11 +360,11 @@ msgstr ""
 "Желательно детально, но по тезисам - так будет проще найти подходящий "
 "проект, обязательно одним сообщением."
 
-#: app/utils/quiz.py:34
+#: app/utils/quiz.py:35
 msgid "Turnkey website design, mobile application design, identity, logos"
 msgstr "Дизайн сайтов под ключ, дизайн мобильных приложений, айдентика, логотипы."
 
-#: app/utils/quiz.py:37
+#: app/utils/quiz.py:38
 msgid ""
 "How much time per week are you willing to devote to our joint projects? "
 "You can rely on the fact that the average working week is 40 hours."
@@ -319,23 +372,23 @@ msgstr ""
 "Сколько времени вы готовы выделять в неделю на наши совместные проекты ? "
 "Можно отталкиваться от того, что средняя рабочая неделя это 40ч."
 
-#: app/utils/quiz.py:38
+#: app/utils/quiz.py:39
 msgid "Preferably briefly and necessarily in single message."
 msgstr "Желательно коротко и в часах, обязательно одним сообщением."
 
-#: app/utils/quiz.py:39
+#: app/utils/quiz.py:40
 msgid "20 hours a week. Sometimes I work on weekends and holidays"
 msgstr "20ч в неделю. Иногда работаю по выходным и праздникам)"
 
-#: app/utils/quiz.py:44
+#: app/utils/quiz.py:45
 msgid "Thanks for answers."
-msgstr ""
+msgstr "Спасибо за ответы"
 
-#: app/utils/quiz.py:60
+#: app/utils/quiz.py:61
 msgid "Answer format"
 msgstr "Формат ответа"
 
-#: app/utils/quiz.py:61
+#: app/utils/quiz.py:62
 msgid "Example"
 msgstr "Пример"
 
@@ -431,5 +484,7 @@ msgstr "Пример"
 #~ "general information."
 #~ msgstr ""
 #~ "Спасибо за ответы. Теперь я предлагаю"
-#~ " вам ознакомиться с общей информацией \n\n"
+#~ " вам ознакомиться с общей информацией \n"
+#~ ""
+#~ "\n"
 

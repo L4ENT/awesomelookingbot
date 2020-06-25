@@ -41,7 +41,9 @@ async def cmd_help(message: types.Message):
         _("{command} - Get this message").format(command="/help"),
         _("{command} - Chat or user settings").format(command="/settings"),
         _("{command} - List of avalible projects for you").format(command="/projects"),
-        _("{command} - Pass the quiz").format(command="/quiz"),
+        _("{command} - Start the quiz").format(command="/quiz"),
+        _("{command} - General info").format(command="/info"),
+        hbold(_("You can send any questions with a simple message")),
     ]
 
     # if types.ChatType.is_private(message):
