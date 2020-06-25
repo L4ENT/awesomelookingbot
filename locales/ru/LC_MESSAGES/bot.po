@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiogram_bot 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-06-25 10:04+1000\n"
+"POT-Creation-Date: 2020-06-25 10:13+1000\n"
 "PO-Revision-Date: 2019-11-06 11:40+0200\n"
 "Last-Translator: \n"
 "Language: ru\n"
@@ -61,8 +61,16 @@ msgid "{command} - List of avalible projects for you"
 msgstr "{command} - Список проектов которые могу вас заинтересовать"
 
 #: app/handlers/base.py:44
-msgid "{command} - Pass the quiz"
-msgstr "{command} - Начать квиз по вашиму опыту и навыкам"
+msgid "{command} - Start the quiz"
+msgstr "{command} - Зполнить анкету заново"
+
+#: app/handlers/base.py:45
+msgid "{command} - General info"
+msgstr "{command} - Общая информация"
+
+#: app/handlers/base.py:46
+msgid "You can send any questions with a simple message"
+msgstr "Вы можете задать любой вопрос отправив обычное сообщение в этот чат."
 
 #: app/handlers/chat_settings.py:51 app/handlers/chat_settings.py:93
 #: app/handlers/chat_settings.py:131
@@ -92,6 +100,10 @@ msgstr "Фильтр входа в чат перенастроен"
 #: app/handlers/chat_settings.py:154
 msgid "Settings saved"
 msgstr "Настройки сохранены"
+
+#: app/handlers/info.py:10
+msgid "General info"
+msgstr "Общая информация"
 
 #: app/handlers/new_chat_members.py:68
 msgid "I'm human"

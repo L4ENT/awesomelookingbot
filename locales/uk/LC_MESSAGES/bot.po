@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiogram_bot 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-06-25 10:04+1000\n"
+"POT-Creation-Date: 2020-06-25 10:13+1000\n"
 "PO-Revision-Date: 2019-11-06 11:41+0200\n"
 "Last-Translator: \n"
 "Language: uk\n"
@@ -53,7 +53,15 @@ msgid "{command} - List of avalible projects for you"
 msgstr ""
 
 #: app/handlers/base.py:44
-msgid "{command} - Pass the quiz"
+msgid "{command} - Start the quiz"
+msgstr ""
+
+#: app/handlers/base.py:45
+msgid "{command} - General info"
+msgstr ""
+
+#: app/handlers/base.py:46
+msgid "You can send any questions with a simple message"
 msgstr ""
 
 #: app/handlers/chat_settings.py:51 app/handlers/chat_settings.py:93
@@ -84,6 +92,10 @@ msgstr "Фільтр входу користувачів переналашто�
 #: app/handlers/chat_settings.py:154
 msgid "Settings saved"
 msgstr "Налаштування збережено"
+
+#: app/handlers/info.py:10
+msgid "General info"
+msgstr ""
 
 #: app/handlers/new_chat_members.py:68
 msgid "I'm human"
@@ -426,5 +438,8 @@ msgstr ""
 #~ "Thanks for answers. Now I suggest "
 #~ "you familiarize yourself with the "
 #~ "general information."
+#~ msgstr ""
+
+#~ msgid "{command} - Pass the quiz"
 #~ msgstr ""
 

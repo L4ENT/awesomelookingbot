@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiogram_bot 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-06-25 10:04+1000\n"
+"POT-Creation-Date: 2020-06-25 10:13+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,7 +49,15 @@ msgid "{command} - List of avalible projects for you"
 msgstr ""
 
 #: app/handlers/base.py:44
-msgid "{command} - Pass the quiz"
+msgid "{command} - Start the quiz"
+msgstr ""
+
+#: app/handlers/base.py:45
+msgid "{command} - General info"
+msgstr ""
+
+#: app/handlers/base.py:46
+msgid "You can send any questions with a simple message"
 msgstr ""
 
 #: app/handlers/chat_settings.py:51 app/handlers/chat_settings.py:93 app/handlers/chat_settings.py:131
@@ -78,6 +86,10 @@ msgstr ""
 
 #: app/handlers/chat_settings.py:154
 msgid "Settings saved"
+msgstr ""
+
+#: app/handlers/info.py:10
+msgid "General info"
 msgstr ""
 
 #: app/handlers/new_chat_members.py:68

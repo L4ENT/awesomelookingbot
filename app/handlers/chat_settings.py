@@ -2,7 +2,8 @@ from contextlib import suppress
 from functools import partial
 
 from aiogram import types
-from aiogram.dispatcher.filters.filters import OrFilter
+from aiogram.dispatcher.filters.filters import OrFilter, 
+from aiogram.dispatcher.filters import Text
 from aiogram.utils.exceptions import MessageCantBeDeleted, MessageNotModified
 from loguru import logger
 
@@ -22,6 +23,14 @@ _ = i18n.gettext
 
 @dp.message_handler(
     types.ChatType.is_group_or_super_group, commands=["settings"], user_can_change_info=True
+)
+@dp.message_handler(
+    types.ChatType.is_private,
+    Text(equals=_('Settings'), ignore_case=True), state='*'
+)
+@dp.message_handler(
+    types.ChatType.is_private,
+    Text(equals='Настройки', ignore_case=True), state='*'
 )
 @dp.message_handler(types.ChatType.is_private, commands=["settings"])
 async def cmd_chat_settings(message: types.Message, chat: Chat, user: User):
