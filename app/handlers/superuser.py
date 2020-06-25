@@ -1,6 +1,6 @@
 from aiogram import types
 
-from app.misc import dp, bot, i18n
+from app.misc import bot, dp, i18n
 from app.utils.superuser import create_super_user, get_admin_user
 
 _ = i18n.gettext
@@ -32,17 +32,17 @@ async def cmd_superuser(message: types.Message):
         )
     )
 
+
 @dp.message_handler(is_superuser=True)
 async def admin_messages(message: types.Message):
-    rmessage:types.Message = message.reply_to_message
+    rmessage: types.Message = message.reply_to_message
     if rmessage:
         user = rmessage.forward_from
         await bot.send_message(user.id, message.text)
-        
+
 
 @dp.message_handler()
 async def messages_messages(message: types.Message):
     admin_user = await get_admin_user()
     if message.from_user.id != admin_user.id:
         await message.forward(admin_user.id)
-        

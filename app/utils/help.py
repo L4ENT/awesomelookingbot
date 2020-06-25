@@ -1,8 +1,10 @@
 from aiogram.utils.markdown import hbold
-from app.utils.keyboard import default_keyboard
+
 from app.misc import i18n
+from app.utils.keyboard import default_keyboard
 
 _ = i18n.gettext
+
 
 async def get_help(message):
     text = [

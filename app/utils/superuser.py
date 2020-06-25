@@ -1,7 +1,7 @@
 from loguru import logger
 
-from app.models.user import User
 from app.models.chat import Chat
+from app.models.user import User
 
 
 async def create_super_user(user_id: int, remove: bool) -> bool:
@@ -22,8 +22,10 @@ async def create_super_user(user_id: int, remove: bool) -> bool:
         logger.warning("User {user} now IS superuser", user=user_id)
     return True
 
+
 async def get_admin_chat():
     return await Chat.query.gino.first()
+
 
 async def get_admin_user():
     return await User.query.where(User.is_superuser == True).gino.first()

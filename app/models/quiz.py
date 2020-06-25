@@ -3,7 +3,6 @@ from __future__ import annotations
 from sqlalchemy.sql import expression
 
 from app.models.db import BaseModel, TimedBaseModel, db
-
 from app.models.user import UserRelatedModel
 
 

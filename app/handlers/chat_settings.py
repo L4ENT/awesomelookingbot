@@ -2,8 +2,8 @@ from contextlib import suppress
 from functools import partial
 
 from aiogram import types
-from aiogram.dispatcher.filters.filters import OrFilter
 from aiogram.dispatcher.filters import Text
+from aiogram.dispatcher.filters.filters import OrFilter
 from aiogram.utils.exceptions import MessageCantBeDeleted, MessageNotModified
 from loguru import logger
 
@@ -26,12 +26,10 @@ _ = i18n.gettext
     types.ChatType.is_group_or_super_group, commands=["settings"], user_can_change_info=True
 )
 @dp.message_handler(
-    types.ChatType.is_private,
-    Text(equals=_('Settings'), ignore_case=True), state='*'
+    types.ChatType.is_private, Text(equals=_("Settings"), ignore_case=True), state="*"
 )
 @dp.message_handler(
-    types.ChatType.is_private,
-    Text(equals='Настройки', ignore_case=True), state='*'
+    types.ChatType.is_private, Text(equals="Настройки", ignore_case=True), state="*"
 )
 @dp.message_handler(types.ChatType.is_private, commands=["settings"])
 async def cmd_chat_settings(message: types.Message, chat: Chat, user: User):
@@ -121,13 +119,12 @@ async def cq_chat_settings_choose_language(
         )
     )
     await query.message.edit_text(text, reply_markup=markup)
-    
-    kb_ch_text = ' '.join([
-        _('Changing your keyboard to'),
-        i18n.AVAILABLE_LANGUAGES[target_language].title
-    ])
+
+    kb_ch_text = " ".join(
+        [_("Changing your keyboard to"), i18n.AVAILABLE_LANGUAGES[target_language].title]
+    )
     await query.message.answer(kb_ch_text, reply_markup=default_keyboard())
-    
+
 
 @dp.callback_query_handler(cb_user_settings.filter(property="do_not_disturb", value="switch"))
 async def cq_user_settings_do_not_disturb(query: types.CallbackQuery, user: User, chat: Chat):

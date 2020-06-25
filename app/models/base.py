@@ -3,7 +3,7 @@
 
 from .chat import Chat
 from .db import db
-from .user import User
 from .quiz import Quiz
+from .user import User
 
 __all__ = ("db", "Chat", "User")
