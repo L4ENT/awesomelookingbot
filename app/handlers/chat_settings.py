@@ -2,7 +2,7 @@ from contextlib import suppress
 from functools import partial
 
 from aiogram import types
-from aiogram.dispatcher.filters.filters import OrFilter, 
+from aiogram.dispatcher.filters.filters import OrFilter
 from aiogram.dispatcher.filters import Text
 from aiogram.utils.exceptions import MessageCantBeDeleted, MessageNotModified
 from loguru import logger
