@@ -1,0 +1,50 @@
+image: docker:latest
+
+variables:
+  DOCKER_DRIVER: overlay
+  # Имена образов с приложением
+  APP_BRANCH_IMAGE: $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
+  APP_DEV_IMAGE: $CI_REGISTRY_IMAGE:dev
+  APP_MASTER_IMAGE: $CI_REGISTRY_IMAGE:master
+  APP_LATEST_IMAGE: $CI_REGISTRY_IMAGE:latest
+
+services:
+  - docker:dind
+
+stages:
+  - build
+  - release
+  - deploy
+
+.registry-login: &registry-login
+  before_script:
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+
+build:
+  stage: build
+  <<: *registry-login
+  script:
+    # Чтобы не собирать образ с нуля, подгрузим предыдущую версию образа, чтобы
+    # использовать его как кэш.
+    # см. https://docs.gitlab.com/ee/ci/docker/using_docker_build.html#making-docker-in-docker-builds-faster-with-docker-layer-caching
+    - docker pull $APP_DEV_IMAGE || true
+    - docker build
+      --cache-from $APP_DEV_IMAGE
+      -t $APP_BRANCH_IMAGE
+      -f ./Dockerfile .
+    - docker push $APP_BRANCH_IMAGE
+  only:
+    - master
+    - dev
+    - merge_requests
+
+
+release-app-image:
+  stage: release
+  <<: *registry-login
+  script:
+    - docker pull $APP_BRANCH_IMAGE
+    - docker tag $APP_BRANCH_IMAGE $APP_LATEST_IMAGE
+    - docker push $APP_LATEST_IMAGE
+  only:
+    - master
