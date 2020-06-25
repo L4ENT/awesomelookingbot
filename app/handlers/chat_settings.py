@@ -17,6 +17,7 @@ from app.utils.chat_settings import (
     get_chat_settings_markup,
     get_user_settings_markup,
 )
+from app.utils.keyboard import default_keyboard
 
 _ = i18n.gettext
 
@@ -120,7 +121,13 @@ async def cq_chat_settings_choose_language(
         )
     )
     await query.message.edit_text(text, reply_markup=markup)
-
+    
+    kb_ch_text = ' '.join([
+        _('Changing your keyboard to'),
+        i18n.AVAILABLE_LANGUAGES[target_language].title
+    ])
+    await query.message.answer(kb_ch_text, reply_markup=default_keyboard())
+    
 
 @dp.callback_query_handler(cb_user_settings.filter(property="do_not_disturb", value="switch"))
 async def cq_user_settings_do_not_disturb(query: types.CallbackQuery, user: User, chat: Chat):

@@ -13,7 +13,7 @@ from app.utils.keyboard import default_keyboard
 _ = i18n.gettext
 
 @dp.message_handler(Text(equals=_('Start quiz again'), ignore_case=True), state='*')
-@dp.message_handler(Text(equals='Начать опрос заново', ignore_case=True), state='*')
+@dp.message_handler(Text(equals='Заполнить анкету заново', ignore_case=True), state='*')
 @dp.message_handler(commands=['quiz'])
 async def cmd_quiz(message: types.Message):
     """

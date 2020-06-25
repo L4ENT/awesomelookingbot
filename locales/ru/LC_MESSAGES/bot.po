@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiogram_bot 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-06-25 10:20+1000\n"
+"POT-Creation-Date: 2020-06-25 11:10+1000\n"
 "PO-Revision-Date: 2019-11-06 11:40+0200\n"
 "Last-Translator: \n"
 "Language: ru\n"
@@ -40,72 +40,80 @@ msgstr ""
 "\n"
 "Передаю вас в его руки )"
 
-#: app/handlers/base.py:39
+#: app/handlers/base.py:33 app/utils/keyboard.py:15
+msgid "Help"
+msgstr "Помощь"
+
+#: app/handlers/base.py:40
 msgid "Here you can read the list of my commands:"
 msgstr "Список команд:"
 
-#: app/handlers/base.py:40
+#: app/handlers/base.py:41
 msgid "{command} - Start conversation with bot"
 msgstr "{command} - Начать диалог с ботом"
 
-#: app/handlers/base.py:41
+#: app/handlers/base.py:42
 msgid "{command} - Get this message"
 msgstr "{command} - Получить данное сообщение"
 
-#: app/handlers/base.py:42
+#: app/handlers/base.py:43
 msgid "{command} - Chat or user settings"
 msgstr "{command} - Настройки чата или персональные"
 
-#: app/handlers/base.py:43
+#: app/handlers/base.py:44
 msgid "{command} - List of avalible projects for you"
 msgstr "{command} - Список проектов которые могу вас заинтересовать"
 
-#: app/handlers/base.py:44
+#: app/handlers/base.py:45
 msgid "{command} - Start the quiz"
 msgstr "{command} - Зполнить анкету заново"
 
-#: app/handlers/base.py:45
+#: app/handlers/base.py:46
 msgid "{command} - General info"
 msgstr "{command} - Общая информация"
 
-#: app/handlers/base.py:46
+#: app/handlers/base.py:47
 msgid "You can send any questions with a simple message"
 msgstr "Вы можете задать любой вопрос отправив обычное сообщение в этот чат."
 
-#: app/handlers/chat_settings.py:29
+#: app/handlers/chat_settings.py:30 app/utils/keyboard.py:15
 msgid "Settings"
 msgstr "Настройки"
 
-#: app/handlers/chat_settings.py:60 app/handlers/chat_settings.py:102
-#: app/handlers/chat_settings.py:140
+#: app/handlers/chat_settings.py:61 app/handlers/chat_settings.py:103
+#: app/handlers/chat_settings.py:147
 msgid "Invalid chat"
 msgstr "Неверный чат"
 
-#: app/handlers/chat_settings.py:74
+#: app/handlers/chat_settings.py:75
 msgid "Choose chat language"
 msgstr "Выбери язык для чата"
 
-#: app/handlers/chat_settings.py:106 app/handlers/chat_settings.py:144
+#: app/handlers/chat_settings.py:107 app/handlers/chat_settings.py:151
 msgid "You cannot change settings of this chat!"
 msgstr "Ты не можешь изменять настройки этого чата!"
 
-#: app/handlers/chat_settings.py:118
+#: app/handlers/chat_settings.py:119
 msgid "Language changed to {new_language}"
 msgstr "Язык изменен на {new_language}"
 
-#: app/handlers/chat_settings.py:128
+#: app/handlers/chat_settings.py:126
+msgid "Changing your keyboard to"
+msgstr "Меняю язык вашей клавиатуры на"
+
+#: app/handlers/chat_settings.py:135
 msgid "Do not disturb mode reconfigured"
 msgstr "Настройки режима \"Не беспокоить\" изменены"
 
-#: app/handlers/chat_settings.py:150
+#: app/handlers/chat_settings.py:157
 msgid "Join filter re-configured"
 msgstr "Фильтр входа в чат перенастроен"
 
-#: app/handlers/chat_settings.py:163
+#: app/handlers/chat_settings.py:170
 msgid "Settings saved"
 msgstr "Настройки сохранены"
 
-#: app/handlers/info.py:10
+#: app/handlers/info.py:10 app/utils/keyboard.py:11
 msgid "General info"
 msgstr "Общая информация"
 
@@ -145,7 +153,7 @@ msgstr "Хороший ответ!"
 msgid "Bad answer."
 msgstr "Плохой ответ."
 
-#: app/handlers/projects.py:15 app/utils/keyboard.py:10
+#: app/handlers/projects.py:15 app/utils/keyboard.py:12
 msgid "Get a projects list"
 msgstr "Запросить список доступных проектов"
 
@@ -157,9 +165,9 @@ msgstr "{0} {1} ищет проект!"
 msgid "Message is received. Please wait for an asnswer."
 msgstr "Сообщение получено. Пожалуйста ождайте ответа."
 
-#: app/handlers/quiz.py:15 app/utils/keyboard.py:11
+#: app/handlers/quiz.py:15 app/utils/keyboard.py:14
 msgid "Start quiz again"
-msgstr "Начать опрос заново"
+msgstr "Заполнить анкету заново"
 
 #: app/handlers/quiz.py:27 app/utils/quiz.py:75
 msgid "Finish the quiz"

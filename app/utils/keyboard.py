@@ -7,7 +7,10 @@ _ = i18n.gettext
 
 def default_keyboard():
     kb = types.ReplyKeyboardMarkup()
-    kb.add(types.KeyboardButton(_('Get a projects list')))
+    kb.row(
+        types.KeyboardButton(_('General info')),
+        types.KeyboardButton(_('Get a projects list'))
+    )
     kb.add(types.KeyboardButton(_('Start quiz again')))
-    kb.add(types.KeyboardButton(_('Setting')))
+    kb.row(types.KeyboardButton(_('Settings')), types.KeyboardButton(_('Help')))
     return kb

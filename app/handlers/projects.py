@@ -23,7 +23,7 @@ async def cmd_projects(message: types.Message, user: User):
         await message.forward(admin_user.id)
     await bot.send_message(
         admin_user.id, 
-        _('{0} {1} needs a project!'.format(user_id, username))
+        _('{0} {1} needs a project!').format(user_id, username)
     )
     await message.answer(
         _('Message is received. Please wait for an asnswer.'),

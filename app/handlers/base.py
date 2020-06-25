@@ -1,6 +1,6 @@
 from aiogram import __main__ as aiogram_core
 from aiogram import types
-from aiogram.dispatcher.filters import CommandHelp, CommandStart
+from aiogram.dispatcher.filters import CommandHelp, CommandStart, Text
 from aiogram.utils.markdown import hbold, hlink, quote_html
 from loguru import logger
 
@@ -30,7 +30,8 @@ async def cmd_start(message: types.Message, user: User):
 
     await start_quiz(message)
 
-
+@dp.message_handler(Text(equals=_('Help'), ignore_case=True))
+@dp.message_handler(Text(equals='Помощь', ignore_case=True))
 @dp.message_handler(CommandHelp())
 async def cmd_help(message: types.Message):
     logger.info("User {user} read help in {chat}",
