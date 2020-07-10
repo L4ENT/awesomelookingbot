@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiogram_bot 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-06-25 11:10+1000\n"
+"POT-Creation-Date: 2020-07-10 12:47+1000\n"
 "PO-Revision-Date: 2019-11-06 11:41+0200\n"
 "Last-Translator: \n"
 "Language: uk\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: app/handlers/base.py:21
+#: app/handlers/base.py:22
 msgid ""
 "(From bot owner) Hello, {user}! Glad to see you here.\n"
 "\n"
@@ -32,80 +32,48 @@ msgid ""
 "I pass you into his arms )"
 msgstr ""
 
-#: app/handlers/base.py:33 app/utils/keyboard.py:15
+#: app/handlers/base.py:35 app/utils/keyboard.py:12
 msgid "Help"
 msgstr ""
 
-#: app/handlers/base.py:40
-msgid "Here you can read the list of my commands:"
-msgstr "Тут описаний список моїх команд:"
-
-#: app/handlers/base.py:41
-msgid "{command} - Start conversation with bot"
-msgstr "{command} - Почати діалог з ботом"
-
-#: app/handlers/base.py:42
-msgid "{command} - Get this message"
-msgstr "{command} - Отримати дане повідомлення"
-
-#: app/handlers/base.py:43
-msgid "{command} - Chat or user settings"
-msgstr "{command} - Налаштування чату або профілю"
-
-#: app/handlers/base.py:44
-msgid "{command} - List of avalible projects for you"
-msgstr ""
-
-#: app/handlers/base.py:45
-msgid "{command} - Start the quiz"
-msgstr ""
-
-#: app/handlers/base.py:46
-msgid "{command} - General info"
-msgstr ""
-
-#: app/handlers/base.py:47
-msgid "You can send any questions with a simple message"
-msgstr ""
-
-#: app/handlers/chat_settings.py:30 app/utils/keyboard.py:15
+#: app/handlers/chat_settings.py:29 app/utils/keyboard.py:12
 msgid "Settings"
 msgstr ""
 
-#: app/handlers/chat_settings.py:61 app/handlers/chat_settings.py:103
-#: app/handlers/chat_settings.py:147
+#: app/handlers/chat_settings.py:59 app/handlers/chat_settings.py:101
+#: app/handlers/chat_settings.py:144
 msgid "Invalid chat"
 msgstr "Невірний чат"
 
-#: app/handlers/chat_settings.py:75
+#: app/handlers/chat_settings.py:73
 msgid "Choose chat language"
 msgstr "Обери мову для чату"
 
-#: app/handlers/chat_settings.py:107 app/handlers/chat_settings.py:151
+#: app/handlers/chat_settings.py:105 app/handlers/chat_settings.py:148
 msgid "You cannot change settings of this chat!"
 msgstr "Ти не можеш міняти налаштування цього чату!"
 
-#: app/handlers/chat_settings.py:119
+#: app/handlers/chat_settings.py:117
 msgid "Language changed to {new_language}"
 msgstr "Мову змінено на {new_language}"
 
-#: app/handlers/chat_settings.py:126
+#: app/handlers/chat_settings.py:124
 msgid "Changing your keyboard to"
 msgstr ""
 
-#: app/handlers/chat_settings.py:135
+#: app/handlers/chat_settings.py:132
 msgid "Do not disturb mode reconfigured"
 msgstr "Налаштування режиму \"Не турбувати\" змінено"
 
-#: app/handlers/chat_settings.py:157
+#: app/handlers/chat_settings.py:154
 msgid "Join filter re-configured"
 msgstr "Фільтр входу користувачів переналаштовано"
 
-#: app/handlers/chat_settings.py:170
+#: app/handlers/chat_settings.py:167
 msgid "Settings saved"
 msgstr "Налаштування збережено"
 
-#: app/handlers/info.py:10 app/utils/keyboard.py:11
+#: app/handlers/info.py:11 app/utils/keyboard.py:10
 msgid "General info"
 msgstr ""
 
@@ -145,27 +113,27 @@ msgstr "Гарна відповідь!"
 msgid "Bad answer."
 msgstr "Погана відповідь."
 
-#: app/handlers/projects.py:15 app/utils/keyboard.py:12
+#: app/handlers/projects.py:16 app/utils/keyboard.py:10
 msgid "Get a projects list"
 msgstr ""
 
-#: app/handlers/projects.py:26
+#: app/handlers/projects.py:25
 msgid "{0} {1} needs a project!"
 msgstr ""
 
-#: app/handlers/projects.py:29
+#: app/handlers/projects.py:27
 msgid "Message is received. Please wait for an asnswer."
 msgstr ""
 
-#: app/handlers/quiz.py:15 app/utils/keyboard.py:14
+#: app/handlers/quiz.py:21 app/utils/keyboard.py:11
 msgid "Start quiz again"
 msgstr ""
 
-#: app/handlers/quiz.py:27 app/utils/quiz.py:75
+#: app/handlers/quiz.py:34 app/utils/quiz.py:85
 msgid "Finish the quiz"
 msgstr ""
 
-#: app/handlers/quiz.py:41
+#: app/handlers/quiz.py:48
 msgid "The quiz is finished"
 msgstr ""
 
@@ -229,77 +197,189 @@ msgstr "Персональні налаштування"
 msgid "{status} Do not disturb"
 msgstr "{status} Не турбувати"
 
-#: app/utils/general_info.py:9
-msgid "What we do?"
+#: app/utils/general_info.py:10
+msgid "What is this bot for?"
 msgstr ""
 
-#: app/utils/general_info.py:10
+#: app/utils/general_info.py:11
 msgid ""
-"Web - HTML, CSS, JS, PYTHON, PHP\n"
-"Design - Web Design, Mobile Design, Identity\n"
-"Marketing - SEO, Context (Google Ads, Yandex Metrica, My Target, SMM "
-"(Instagram, Vk, Facebook)\n"
-"If you do not see here what you are good at - we are open to any offers -"
-" we will burst into any area if the game is worth the paraffin spent.\n"
-"If you have your own projects, but do not have enough resources to "
-"implement them, then contact us. We will definitely respond - with what "
-"we can we will help."
+"This bot serves to speed up and simplify communication with project "
+"executors."
+msgstr ""
+
+#: app/utils/general_info.py:13
+msgid "What are we doing?"
+msgstr ""
+
+#: app/utils/general_info.py:15
+msgid "Web Development"
+msgstr ""
+
+#: app/utils/general_info.py:16
+msgid "HTML, CSS, JS, PYTHON, PHP"
 msgstr ""
 
 #: app/utils/general_info.py:17
-msgid "What do we give?"
+msgid "Design"
 msgstr ""
 
 #: app/utils/general_info.py:18
+msgid "Web Design, Mobile App Design, Identity"
+msgstr ""
+
+#: app/utils/general_info.py:19
+msgid "Digital marketing"
+msgstr ""
+
+#: app/utils/general_info.py:20
 msgid ""
-"Free schedule (only deadlines and checkpoints limit).\n"
-"\n"
-"Top experience. We work all over the world, keep in touch and work on "
-"projects with top experts, and share all knowledge and best practices "
-"with everyone who wants to join the community.\n"
-"\n"
-"Flexible payment system. Before each project, we personally agree on the "
-"size, terms of payment and the system of fines for non-compliance with "
-"the conditions (for both parties)."
+"SEO, Contextual Advertising (Google Ads, Yandex Metrica, My Target, SMM "
+"(Instagram, Vk, Facebook)"
+msgstr ""
+
+#: app/utils/general_info.py:22
+msgid "How does it all work?"
 msgstr ""
 
 #: app/utils/general_info.py:23
-msgid "Payment"
+msgid ""
+"We have a huge number of projects in our assets, and a constantly "
+"expanding database of performers.As soon as we open a new project, there "
+"is a distribution of proposals to all potentially interested performers."
 msgstr ""
 
-#: app/utils/general_info.py:24
-msgid ""
-"Remuneration is discussed with each person personally before each "
-"project. All financial nuances are clearly agreed upon prior to any work."
-"\n"
-"We are not concluding an agreement yet. Not because we are a radical "
-"marginal community, but because, so far, there is no such possibility due"
-" to the complexity of implementation in terms of jurisprudence and "
-"taxation.\n"
-"BUT our policy - a contract is always good. We will gradually come to "
-"official contracts - this is a fact."
+#: app/utils/general_info.py:27
+msgid "We"
+msgstr ""
+
+#: app/utils/general_info.py:28
+msgid "We formulate a clear technical task"
 msgstr ""
 
 #: app/utils/general_info.py:29
-msgid "Minimum Entry Threshold"
+msgid ""
+"We organize project logistics (time management, project team "
+"coordination, working infrastructure - test stands, testing, etc.)"
 msgstr ""
 
 #: app/utils/general_info.py:30
 msgid ""
-"Know Git at the level of clone, brunch, commit and push. The rest is "
-"personal nuances."
+"We give technical expertise (there are full-time specialists who will "
+"help solve any task)"
 msgstr ""
 
-#: app/utils/general_info.py:33
-msgid "Who is this job for?"
+#: app/utils/general_info.py:31
+msgid "You"
+msgstr ""
+
+#: app/utils/general_info.py:32
+msgid ""
+"Clearly do all the work according to the terms of reference and deadlines"
+" and get paid for it."
 msgstr ""
 
 #: app/utils/general_info.py:34
+msgid "What can we offer for specialists?"
+msgstr ""
+
+#: app/utils/general_info.py:36
+msgid "Absolutely free schedule"
+msgstr ""
+
+#: app/utils/general_info.py:37
+msgid "The only restrictions are deadlines and check points"
+msgstr ""
+
+#: app/utils/general_info.py:39
+msgid "Relevant experience"
+msgstr ""
+
+#: app/utils/general_info.py:40
 msgid ""
-"While we cannot provide everyone with permanent projects and a stable "
-"monthly salary, we offer to consider all this as an excellent temporary "
-"part-time job, an opportunity to pump your skills and replenish your "
-"portfolio with cool projects."
+"We work all over the world, keep in touch and work on projects with "
+"highly qualified specialists, and share all knowledge and best practices "
+"with everyone who wants to join our community"
+msgstr ""
+
+#: app/utils/general_info.py:42
+msgid "Flexible payment system"
+msgstr ""
+
+#: app/utils/general_info.py:43
+msgid ""
+"Before each project, we will personally agree on the size, terms of "
+"payment and the system of fines for non-compliance with the conditions "
+"(both for us and for the performers)."
+msgstr ""
+
+#: app/utils/general_info.py:45
+msgid "Payment"
+msgstr ""
+
+#: app/utils/general_info.py:47
+msgid ""
+"Cash rewards are always discussed in person. All financial nuances are "
+"clearly negotiated before any work. We are still working on a format for "
+"contractual relations, and therefore, so far all relations with "
+"performers are built on a non-contractual basis."
+msgstr ""
+
+#: app/utils/general_info.py:54
+msgid "FAQ"
+msgstr ""
+
+#: app/utils/general_info.py:56
+msgid "But what if my skills do not match your occupation?"
+msgstr ""
+
+#: app/utils/general_info.py:57
+msgid ""
+"If you think that your skills do not match our profile, then you can "
+"still fill out the questionnaire. Any skills will find their application."
+" We will try to find a project for you."
+msgstr ""
+
+#: app/utils/general_info.py:59
+msgid "Is it possible to use your services for my projects?"
+msgstr ""
+
+#: app/utils/general_info.py:60
+msgid ""
+"If you already have projects, but you don’t have enough resources to "
+"execute them, you can also contact us by sending a text message to this "
+"bot."
+msgstr ""
+
+#: app/utils/help.py:11
+msgid "Here you can read the list of my commands:"
+msgstr "Тут описаний список моїх команд:"
+
+#: app/utils/help.py:12
+msgid "{command} - Start conversation with bot"
+msgstr "{command} - Почати діалог з ботом"
+
+#: app/utils/help.py:13
+msgid "{command} - Get this message"
+msgstr "{command} - Отримати дане повідомлення"
+
+#: app/utils/help.py:14
+msgid "{command} - Chat or user settings"
+msgstr "{command} - Налаштування чату або профілю"
+
+#: app/utils/help.py:15
+msgid "{command} - List of avalible projects for you"
+msgstr ""
+
+#: app/utils/help.py:16
+msgid "{command} - Start the quiz"
+msgstr ""
+
+#: app/utils/help.py:17
+msgid "{command} - General info"
+msgstr ""
+
+#: app/utils/help.py:18
+msgid "You can send any questions with a simple message"
 msgstr ""
 
 #: app/utils/quiz.py:28
@@ -312,52 +392,52 @@ msgid ""
 "message."
 msgstr ""
 
-#: app/utils/quiz.py:30
+#: app/utils/quiz.py:32
 msgid ""
 "I am a website designer. I worked in a digital agency for 2 years. I have"
 " very much projects in my suitcase) There is a portfolio [link]. I am "
 "often fond a design of fonts ..."
 msgstr ""
 
-#: app/utils/quiz.py:33
+#: app/utils/quiz.py:37
 msgid ""
 "What projects and tasks are you interested in (programming, sales, "
 "marketing, turnkey projects, short tasks, etc.)?"
 msgstr ""
 
-#: app/utils/quiz.py:34
+#: app/utils/quiz.py:40
 msgid ""
 "Preferably detailed (thesis), because it will be easier to find the right"
 " project for you. Be sure to write in a single message."
 msgstr ""
 
-#: app/utils/quiz.py:35
+#: app/utils/quiz.py:43
 msgid "Turnkey website design, mobile application design, identity, logos"
 msgstr ""
 
-#: app/utils/quiz.py:38
+#: app/utils/quiz.py:46
 msgid ""
 "How much time per week are you willing to devote to our joint projects? "
 "You can rely on the fact that the average working week is 40 hours."
 msgstr ""
 
-#: app/utils/quiz.py:39
+#: app/utils/quiz.py:49
 msgid "Preferably briefly and necessarily in single message."
 msgstr ""
 
-#: app/utils/quiz.py:40
+#: app/utils/quiz.py:50
 msgid "20 hours a week. Sometimes I work on weekends and holidays"
 msgstr ""
 
-#: app/utils/quiz.py:45
+#: app/utils/quiz.py:55
 msgid "Thanks for answers."
 msgstr ""
 
-#: app/utils/quiz.py:61
+#: app/utils/quiz.py:71
 msgid "Answer format"
 msgstr ""
 
-#: app/utils/quiz.py:62
+#: app/utils/quiz.py:72
 msgid "Example"
 msgstr ""
 
@@ -453,5 +533,86 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "{command} - Pass the quiz"
+#~ msgstr ""
+
+#~ msgid "What we do?"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Web - HTML, CSS, JS, PYTHON, PHP\n"
+#~ "Design - Web Design, Mobile Design, Identity\n"
+#~ "Marketing - SEO, Context (Google Ads,"
+#~ " Yandex Metrica, My Target, SMM "
+#~ "(Instagram, Vk, Facebook)\n"
+#~ "If you do not see here what "
+#~ "you are good at - we are "
+#~ "open to any offers - we will "
+#~ "burst into any area if the game"
+#~ " is worth the paraffin spent.\n"
+#~ "If you have your own projects, but"
+#~ " do not have enough resources to "
+#~ "implement them, then contact us. We "
+#~ "will definitely respond - with what "
+#~ "we can we will help."
+#~ msgstr ""
+
+#~ msgid "What do we give?"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Free schedule (only deadlines and checkpoints limit).\n"
+#~ "\n"
+#~ "Top experience. We work all over "
+#~ "the world, keep in touch and work"
+#~ " on projects with top experts, and"
+#~ " share all knowledge and best "
+#~ "practices with everyone who wants to "
+#~ "join the community.\n"
+#~ "\n"
+#~ "Flexible payment system. Before each "
+#~ "project, we personally agree on the "
+#~ "size, terms of payment and the "
+#~ "system of fines for non-compliance "
+#~ "with the conditions (for both parties)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Remuneration is discussed with each "
+#~ "person personally before each project. "
+#~ "All financial nuances are clearly agreed"
+#~ " upon prior to any work.\n"
+#~ "We are not concluding an agreement "
+#~ "yet. Not because we are a radical"
+#~ " marginal community, but because, so "
+#~ "far, there is no such possibility "
+#~ "due to the complexity of implementation"
+#~ " in terms of jurisprudence and "
+#~ "taxation.\n"
+#~ "BUT our policy - a contract is "
+#~ "always good. We will gradually come "
+#~ "to official contracts - this is a"
+#~ " fact."
+#~ msgstr ""
+
+#~ msgid "Minimum Entry Threshold"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Know Git at the level of clone,"
+#~ " brunch, commit and push. The rest"
+#~ " is personal nuances."
+#~ msgstr ""
+
+#~ msgid "Who is this job for?"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "While we cannot provide everyone with"
+#~ " permanent projects and a stable "
+#~ "monthly salary, we offer to consider "
+#~ "all this as an excellent temporary "
+#~ "part-time job, an opportunity to "
+#~ "pump your skills and replenish your "
+#~ "portfolio with cool projects."
 #~ msgstr ""
 
